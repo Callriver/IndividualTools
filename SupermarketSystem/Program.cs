@@ -9,7 +9,11 @@ namespace SupermarketSystem
     {
         static void Main(string[] args)
         {
-
+            //创建超市对象
+            SuperMarket sm = new SuperMarket();
+            sm.ShowPros();
+            sm.AskBuying();
+            Console.ReadKey();
         }
     }
 }

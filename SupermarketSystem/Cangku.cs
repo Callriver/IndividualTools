@@ -40,9 +40,38 @@ namespace SupermarketSystem
         }
 
         //取货
-        public void QuPros(string strType,int count)
+        public ProductFather[] QuPros(string strType,int count)
         {
+            ProductFather[]pros=new ProductFather[count];
+            for (int i = 0; i < count;i++ )
+            {
+                switch (strType)
+                {
+                    case "Acer": pros[i] = list[0][0];
+                        list[0].RemoveAt(0);
+                        break;
+                    case "Sumsang": pros[i] = list[1][0];
+                        list[1].RemoveAt(0);
+                        break;
+                    case "Banana": pros[i] = list[2][0];
+                        list[2].RemoveAt(0);
+                        break;
+                    case "Jiangyou": pros[i] = list[3][0];
+                        list[3].RemoveAt(0);
+                        break;
+                }
+            }
+            return pros;
+        }
 
+        //向用户展示货物
+        public void ShowPros()
+        {
+            foreach (var item in list)
+            {
+                Console.WriteLine("我们超市有:"+item[0].Name+","+"\t"+"有"+item.Count+"个,"+"\t"+"每个"+item[0].Price+"元."+"\r\n");
+            }
         }
     }
+
 }

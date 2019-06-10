@@ -50,7 +50,7 @@ namespace SupermarketSystem
                     case "Acer": pros[i] = list[0][0];
                         list[0].RemoveAt(0);
                         break;
-                    case "Sumsang": pros[i] = list[1][0];
+                    case "SamSung": pros[i] = list[1][0];
                         list[1].RemoveAt(0);
                         break;
                     case "Banana": pros[i] = list[2][0];

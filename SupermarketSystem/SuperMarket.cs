@@ -37,8 +37,16 @@ namespace SupermarketSystem
             CallFather cal=GetCal(input);
             double totalMoney=cal.getTotalMoney(money);
             Console.WriteLine("打完折后,你应付{0}元", totalMoney);
+            Console.WriteLine("以下是您的购物信息");
+            foreach (var item in pros)
+            {
+                Console.WriteLine("货物名称:"+item.Name+","+"\t"+"货物单价:"+item.Price+","+"\t"+"货物编号:"+item.ID);
+            }
         }
+        public void XiaoPiao()
+        {
 
+        }
         //计算总价钱
         public double GetMoney(ProductFather[] pros)
         {

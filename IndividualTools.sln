@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimingShutdown", "TimingShu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SupermarketSystem", "SupermarketSystem\SupermarketSystem.csproj", "{2F87F9FF-EBD0-4767-8EA1-0A43003C9927}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoYouLoveMe", "DoYouLoveMe\DoYouLoveMe.csproj", "{C07CA134-E921-4E37-A378-F8BD329C362B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{2F87F9FF-EBD0-4767-8EA1-0A43003C9927}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2F87F9FF-EBD0-4767-8EA1-0A43003C9927}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2F87F9FF-EBD0-4767-8EA1-0A43003C9927}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C07CA134-E921-4E37-A378-F8BD329C362B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C07CA134-E921-4E37-A378-F8BD329C362B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C07CA134-E921-4E37-A378-F8BD329C362B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C07CA134-E921-4E37-A378-F8BD329C362B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

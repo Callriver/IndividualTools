@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SupermarketSystem", "Superm
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoYouLoveMe", "DoYouLoveMe\DoYouLoveMe.csproj", "{C07CA134-E921-4E37-A378-F8BD329C362B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HexConvert", "HexConvert\HexConvert.csproj", "{E990DCC9-526B-4BE3-AA0C-DD9921C592B6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{C07CA134-E921-4E37-A378-F8BD329C362B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C07CA134-E921-4E37-A378-F8BD329C362B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C07CA134-E921-4E37-A378-F8BD329C362B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E990DCC9-526B-4BE3-AA0C-DD9921C592B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E990DCC9-526B-4BE3-AA0C-DD9921C592B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E990DCC9-526B-4BE3-AA0C-DD9921C592B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E990DCC9-526B-4BE3-AA0C-DD9921C592B6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

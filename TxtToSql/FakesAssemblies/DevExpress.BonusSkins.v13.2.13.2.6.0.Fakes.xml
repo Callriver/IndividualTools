@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DevExpress.BonusSkins.v13.2.13.2.6.0.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:DevExpress.UserSkins.Fakes.ShimBonusSkins">
+            <summary>DevExpress.UserSkins.BonusSkins 的填充码类型</summary>
+        </member>
+        <member name="M:DevExpress.UserSkins.Fakes.ShimBonusSkins.#ctor">
+            <summary>初始化新的填充码实例</summary>
+        </member>
+        <member name="M:DevExpress.UserSkins.Fakes.ShimBonusSkins.#ctor(DevExpress.UserSkins.BonusSkins)">
+            <summary>初始化给定实例的新填充码</summary>
+        </member>
+        <member name="M:DevExpress.UserSkins.Fakes.ShimBonusSkins.BehaveAsCurrent">
+            <summary>为已填充的类型的所有方法分配“Current”行为</summary>
+        </member>
+        <member name="M:DevExpress.UserSkins.Fakes.ShimBonusSkins.BehaveAsNotImplemented">
+            <summary>为已填充的类型的所有方法分配“NotImplemented”行为</summary>
+        </member>
+        <member name="P:DevExpress.UserSkins.Fakes.ShimBonusSkins.Behavior">
+            <summary>为已填充的类型的所有方法分配行为</summary>
+        </member>
+        <member name="P:DevExpress.UserSkins.Fakes.ShimBonusSkins.Constructor">
+            <summary>设置 BonusSkins.BonusSkins() 的 填充码</summary>
+        </member>
+        <member name="P:DevExpress.UserSkins.Fakes.ShimBonusSkins.Register">
+            <summary>设置 BonusSkins.Register() 的 填充码</summary>
+        </member>
+        <member name="T:DevExpress.UserSkins.Fakes.ShimBonusSkins.AllInstances">
+            <summary>为所有实例成员定义填充码</summary>
+        </member>
+        <member name="T:DevExpress.UserSkins.Fakes.StubBonusSkins">
+            <summary>DevExpress.UserSkins.BonusSkins 的存根类型</summary>
+        </member>
+        <member name="M:DevExpress.UserSkins.Fakes.StubBonusSkins.#ctor">
+            <summary>初始化新实例</summary>
+        </member>
+        <member name="M:DevExpress.UserSkins.Fakes.StubBonusSkins.InitializeStub">
+            <summary>初始化 type StubBonusSkins 的新实例</summary>
+        </member>
+        <member name="P:DevExpress.UserSkins.Fakes.StubBonusSkins.CallBase">
+            <summary>获取或设置一个值，该值指示是否应调用基方法而不调用回退行为</summary>
+        </member>
+        <member name="P:DevExpress.UserSkins.Fakes.StubBonusSkins.InstanceBehavior">
+            <summary>获取或设置实例行为。</summary>
+        </member>
+        <member name="P:DevExpress.UserSkins.Fakes.StubBonusSkins.InstanceObserver">
+            <summary>获取或设置实例观察者。</summary>
+        </member>
+    </members>
+</doc>

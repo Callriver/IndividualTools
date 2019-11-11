@@ -9,8 +9,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SupermarketSystem", "Superm
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoYouLoveMe", "DoYouLoveMe\DoYouLoveMe.csproj", "{C07CA134-E921-4E37-A378-F8BD329C362B}"
 EndProject
-<<<<<<< HEAD
-<<<<<<< HEAD
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExamRemind", "ExamRemind\ExamRemind.csproj", "{134950AE-8A8B-4BA6-933C-E2938EC96DED}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WxbPlugin", "WxbPlugin\WxbPlugin.csproj", "{E32AB3DE-AD90-4866-9F4F-0B527825B6E3}"
@@ -18,12 +16,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TxtToSql", "TxtToSql\TxtToSql.csproj", "{7C8774A3-F6B0-4B71-8997-D37E98CF4C73}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemandManagementSystem", "DemandManagementSystem\DemandManagementSystem.csproj", "{E85DC085-FF88-4D8A-9CEC-1C7AB809D564}"
-=======
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HexConvert", "HexConvert\HexConvert.csproj", "{E990DCC9-526B-4BE3-AA0C-DD9921C592B6}"
->>>>>>> 50cdeb7da58e5561f2006370f3cca0d4e20b6c72
-=======
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HexConvert", "HexConvert\HexConvert.csproj", "{E990DCC9-526B-4BE3-AA0C-DD9921C592B6}"
->>>>>>> 50cdeb7da58e5561f2006370f3cca0d4e20b6c72
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -43,8 +37,6 @@ Global
 		{C07CA134-E921-4E37-A378-F8BD329C362B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C07CA134-E921-4E37-A378-F8BD329C362B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C07CA134-E921-4E37-A378-F8BD329C362B}.Release|Any CPU.Build.0 = Release|Any CPU
-<<<<<<< HEAD
-<<<<<<< HEAD
 		{134950AE-8A8B-4BA6-933C-E2938EC96DED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{134950AE-8A8B-4BA6-933C-E2938EC96DED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{134950AE-8A8B-4BA6-933C-E2938EC96DED}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -61,17 +53,10 @@ Global
 		{E85DC085-FF88-4D8A-9CEC-1C7AB809D564}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E85DC085-FF88-4D8A-9CEC-1C7AB809D564}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E85DC085-FF88-4D8A-9CEC-1C7AB809D564}.Release|Any CPU.Build.0 = Release|Any CPU
-=======
-=======
->>>>>>> 50cdeb7da58e5561f2006370f3cca0d4e20b6c72
 		{E990DCC9-526B-4BE3-AA0C-DD9921C592B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E990DCC9-526B-4BE3-AA0C-DD9921C592B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E990DCC9-526B-4BE3-AA0C-DD9921C592B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E990DCC9-526B-4BE3-AA0C-DD9921C592B6}.Release|Any CPU.Build.0 = Release|Any CPU
-<<<<<<< HEAD
->>>>>>> 50cdeb7da58e5561f2006370f3cca0d4e20b6c72
-=======
->>>>>>> 50cdeb7da58e5561f2006370f3cca0d4e20b6c72
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

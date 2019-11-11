@@ -66,6 +66,7 @@
             this.userText.Name = "userText";
             this.userText.Size = new System.Drawing.Size(163, 20);
             this.userText.TabIndex = 2;
+            this.userText.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.userText_PreviewKeyDown);
             // 
             // passText
             // 
@@ -73,6 +74,7 @@
             this.passText.Name = "passText";
             this.passText.Size = new System.Drawing.Size(163, 20);
             this.passText.TabIndex = 3;
+            this.passText.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.passText_PreviewKeyDown);
             // 
             // projectLable
             // 
@@ -99,6 +101,7 @@
             this.simpleButton1.Size = new System.Drawing.Size(91, 23);
             this.simpleButton1.TabIndex = 7;
             this.simpleButton1.Text = "登录";
+            this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
             // 
             // checkEdit1
             // 
@@ -126,7 +129,7 @@
             this.LookAndFeel.UseDefaultLookAndFeel = false;
             this.MaximizeBox = false;
             this.Name = "Form1";
-            this.Text = "小强需求管理系统v1.0.0.1";
+            this.Text = "需求管理系统v1.0.0.1";
             ((System.ComponentModel.ISupportInitialize)(this.userText.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.passText.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit1.Properties)).EndInit();

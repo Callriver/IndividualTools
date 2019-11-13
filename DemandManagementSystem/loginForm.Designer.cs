@@ -1,6 +1,6 @@
 ﻿namespace DemandManagementSystem
 {
-    partial class Form1
+    partial class loginForm
     {
         /// <summary>
         /// Required designer variable.
@@ -72,6 +72,7 @@
             // 
             this.passText.Location = new System.Drawing.Point(82, 54);
             this.passText.Name = "passText";
+            this.passText.Properties.PasswordChar = '*';
             this.passText.Size = new System.Drawing.Size(163, 20);
             this.passText.TabIndex = 3;
             this.passText.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.passText_PreviewKeyDown);
@@ -91,6 +92,7 @@
             this.comboBoxEdit1.Name = "comboBoxEdit1";
             this.comboBoxEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.comboBoxEdit1.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
             this.comboBoxEdit1.Size = new System.Drawing.Size(163, 20);
             this.comboBoxEdit1.TabIndex = 6;
             // 
@@ -111,7 +113,7 @@
             this.checkEdit1.Size = new System.Drawing.Size(75, 19);
             this.checkEdit1.TabIndex = 8;
             // 
-            // Form1
+            // loginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -128,8 +130,11 @@
             this.LookAndFeel.SkinName = "Office 2010 Blue";
             this.LookAndFeel.UseDefaultLookAndFeel = false;
             this.MaximizeBox = false;
-            this.Name = "Form1";
+            this.Name = "loginForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "需求管理系统v1.0.0.1";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
+            this.Load += new System.EventHandler(this.loginForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.userText.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.passText.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit1.Properties)).EndInit();

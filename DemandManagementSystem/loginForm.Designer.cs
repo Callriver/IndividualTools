@@ -117,7 +117,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(287, 167);
+            this.ClientSize = new System.Drawing.Size(270, 164);
             this.Controls.Add(this.checkEdit1);
             this.Controls.Add(this.simpleButton1);
             this.Controls.Add(this.comboBoxEdit1);

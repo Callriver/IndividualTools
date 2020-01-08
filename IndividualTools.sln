@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PropertyMaintenance", "Prop
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FieldComparisonUtil", "FieldComparisonUtil\FieldComparisonUtil.csproj", "{B11BCE73-AEDC-4CA7-A69B-8F56B164586B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GbCodeInspection", "GbCodeInspection\GbCodeInspection.csproj", "{095519C1-00F7-45ED-9CCE-3051DB27598E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,10 @@ Global
 		{B11BCE73-AEDC-4CA7-A69B-8F56B164586B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B11BCE73-AEDC-4CA7-A69B-8F56B164586B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B11BCE73-AEDC-4CA7-A69B-8F56B164586B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{095519C1-00F7-45ED-9CCE-3051DB27598E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{095519C1-00F7-45ED-9CCE-3051DB27598E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{095519C1-00F7-45ED-9CCE-3051DB27598E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{095519C1-00F7-45ED-9CCE-3051DB27598E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

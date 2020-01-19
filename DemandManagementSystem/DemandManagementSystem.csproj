@@ -41,6 +41,9 @@
     <Reference Include="DevExpress.Sparkline.v13.2.Core" />
     <Reference Include="DevExpress.XtraBars.v13.2, Version=13.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraEditors.v13.2" />
+    <Reference Include="MessageTools">
+      <HintPath>..\..\..\FySoftware\韦小宝\Wfy_Sale\Wfy_Sale\MessageTools.dll</HintPath>
+    </Reference>
     <Reference Include="Oracle.ManagedDataAccess">
       <HintPath>..\packages\Oracle.ManagedDataAccess.19.5.0\lib\net40\Oracle.ManagedDataAccess.dll</HintPath>
     </Reference>

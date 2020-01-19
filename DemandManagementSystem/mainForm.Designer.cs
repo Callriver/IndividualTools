@@ -29,18 +29,14 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            DevExpress.Utils.SuperToolTip superToolTip1 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem1 = new DevExpress.Utils.ToolTipTitleItem();
-            DevExpress.Utils.SuperToolTip superToolTip2 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem2 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.SuperToolTip superToolTip5 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem5 = new DevExpress.Utils.ToolTipTitleItem();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(mainForm));
+            DevExpress.Utils.SuperToolTip superToolTip6 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem6 = new DevExpress.Utils.ToolTipTitleItem();
             this.ribbon = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.barButtonGroup1 = new DevExpress.XtraBars.BarButtonGroup();
             this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
-            this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonStatusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
-            this.defaultLookAndFeel1 = new DevExpress.LookAndFeel.DefaultLookAndFeel(this.components);
             this.barSubItem1 = new DevExpress.XtraBars.BarSubItem();
             this.barMdiChildrenListItem1 = new DevExpress.XtraBars.BarMdiChildrenListItem();
             this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
@@ -52,12 +48,10 @@
             this.barButtonGroup3 = new DevExpress.XtraBars.BarButtonGroup();
             this.barEditItem1 = new DevExpress.XtraBars.BarEditItem();
             this.repositoryItemSpinEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemSpinEdit();
-            this.xtraTabControl1 = new DevExpress.XtraTab.XtraTabControl();
-            this.xtraTabPage1 = new DevExpress.XtraTab.XtraTabPage();
-            this.xtraTabPage2 = new DevExpress.XtraTab.XtraTabPage();
             this.barListItem2 = new DevExpress.XtraBars.BarListItem();
             this.barListItem3 = new DevExpress.XtraBars.BarListItem();
             this.barLinkContainerItem2 = new DevExpress.XtraBars.BarLinkContainerItem();
+            this.barButtonItem5 = new DevExpress.XtraBars.BarButtonItem();
             this.barDockingMenuItem1 = new DevExpress.XtraBars.BarDockingMenuItem();
             this.barSubItem3 = new DevExpress.XtraBars.BarSubItem();
             this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
@@ -72,15 +66,21 @@
             this.barEditItem5 = new DevExpress.XtraBars.BarEditItem();
             this.repositoryItemImageEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemImageEdit();
             this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem5 = new DevExpress.XtraBars.BarButtonItem();
+            this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonStatusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
+            this.defaultLookAndFeel1 = new DevExpress.LookAndFeel.DefaultLookAndFeel(this.components);
+            this.xtraTabControl1 = new DevExpress.XtraTab.XtraTabControl();
+            this.xtraTabPage1 = new DevExpress.XtraTab.XtraTabPage();
+            this.xtraTabPage2 = new DevExpress.XtraTab.XtraTabPage();
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemSpinEdit1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).BeginInit();
-            this.xtraTabControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemImageComboBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemImageEdit1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).BeginInit();
+            this.xtraTabControl1.SuspendLayout();
             this.SuspendLayout();
             // 
             // ribbon
@@ -133,46 +133,17 @@
             this.barButtonGroup1.Caption = "barButtonGroup1";
             this.barButtonGroup1.Id = 1;
             this.barButtonGroup1.Name = "barButtonGroup1";
-            toolTipTitleItem1.Appearance.Image = global::DemandManagementSystem.Properties.Resources.customer_32x32;
-            toolTipTitleItem1.Appearance.Options.UseImage = true;
-            toolTipTitleItem1.Image = global::DemandManagementSystem.Properties.Resources.customer_32x32;
-            superToolTip1.Items.Add(toolTipTitleItem1);
-            this.barButtonGroup1.SuperTip = superToolTip1;
+            toolTipTitleItem5.Appearance.Image = global::DemandManagementSystem.Properties.Resources.customer_32x32;
+            toolTipTitleItem5.Appearance.Options.UseImage = true;
+            toolTipTitleItem5.Image = global::DemandManagementSystem.Properties.Resources.customer_32x32;
+            superToolTip5.Items.Add(toolTipTitleItem5);
+            this.barButtonGroup1.SuperTip = superToolTip5;
             // 
             // barButtonItem1
             // 
             this.barButtonItem1.Caption = "barButtonItem1";
             this.barButtonItem1.Id = 2;
             this.barButtonItem1.Name = "barButtonItem1";
-            // 
-            // ribbonPage1
-            // 
-            this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.ribbonPageGroup1});
-            this.ribbonPage1.Name = "ribbonPage1";
-            this.ribbonPage1.Text = "系统设置";
-            // 
-            // ribbonPageGroup1
-            // 
-            this.ribbonPageGroup1.ItemLinks.Add(this.barLinkContainerItem2, true);
-            this.ribbonPageGroup1.Name = "ribbonPageGroup1";
-            toolTipTitleItem2.Appearance.Image = global::DemandManagementSystem.Properties.Resources.customer_32x32;
-            toolTipTitleItem2.Appearance.Options.UseImage = true;
-            toolTipTitleItem2.Image = global::DemandManagementSystem.Properties.Resources.customer_32x32;
-            toolTipTitleItem2.Text = "用户管理";
-            superToolTip2.Items.Add(toolTipTitleItem2);
-            this.ribbonPageGroup1.SuperTip = superToolTip2;
-            // 
-            // ribbonStatusBar
-            // 
-            this.ribbonStatusBar.Location = new System.Drawing.Point(0, 483);
-            this.ribbonStatusBar.Name = "ribbonStatusBar";
-            this.ribbonStatusBar.Ribbon = this.ribbon;
-            this.ribbonStatusBar.Size = new System.Drawing.Size(796, 32);
-            // 
-            // defaultLookAndFeel1
-            // 
-            this.defaultLookAndFeel1.LookAndFeel.SkinName = "Office 2010 Blue";
             // 
             // barSubItem1
             // 
@@ -245,29 +216,6 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.repositoryItemSpinEdit1.Name = "repositoryItemSpinEdit1";
             // 
-            // xtraTabControl1
-            // 
-            this.xtraTabControl1.Location = new System.Drawing.Point(0, 154);
-            this.xtraTabControl1.Name = "xtraTabControl1";
-            this.xtraTabControl1.SelectedTabPage = this.xtraTabPage1;
-            this.xtraTabControl1.Size = new System.Drawing.Size(300, 300);
-            this.xtraTabControl1.TabIndex = 3;
-            this.xtraTabControl1.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
-            this.xtraTabPage1,
-            this.xtraTabPage2});
-            // 
-            // xtraTabPage1
-            // 
-            this.xtraTabPage1.Name = "xtraTabPage1";
-            this.xtraTabPage1.Size = new System.Drawing.Size(294, 271);
-            this.xtraTabPage1.Text = "xtraTabPage1";
-            // 
-            // xtraTabPage2
-            // 
-            this.xtraTabPage2.Name = "xtraTabPage2";
-            this.xtraTabPage2.Size = new System.Drawing.Size(294, 271);
-            this.xtraTabPage2.Text = "xtraTabPage2";
-            // 
             // barListItem2
             // 
             this.barListItem2.Caption = "用户管理";
@@ -289,6 +237,14 @@
             this.barLinkContainerItem2.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
             new DevExpress.XtraBars.LinkPersistInfo(this.barButtonItem5)});
             this.barLinkContainerItem2.Name = "barLinkContainerItem2";
+            // 
+            // barButtonItem5
+            // 
+            this.barButtonItem5.Caption = "barButtonItem5";
+            this.barButtonItem5.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem5.Glyph")));
+            this.barButtonItem5.Id = 26;
+            this.barButtonItem5.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem5.LargeGlyph")));
+            this.barButtonItem5.Name = "barButtonItem5";
             // 
             // barDockingMenuItem1
             // 
@@ -379,13 +335,57 @@
             this.barButtonItem4.Id = 25;
             this.barButtonItem4.Name = "barButtonItem4";
             // 
-            // barButtonItem5
+            // ribbonPage1
             // 
-            this.barButtonItem5.Caption = "barButtonItem5";
-            this.barButtonItem5.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem5.Glyph")));
-            this.barButtonItem5.Id = 26;
-            this.barButtonItem5.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem5.LargeGlyph")));
-            this.barButtonItem5.Name = "barButtonItem5";
+            this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.ribbonPageGroup1});
+            this.ribbonPage1.Name = "ribbonPage1";
+            this.ribbonPage1.Text = "系统设置";
+            // 
+            // ribbonPageGroup1
+            // 
+            this.ribbonPageGroup1.ItemLinks.Add(this.barLinkContainerItem2, true);
+            this.ribbonPageGroup1.Name = "ribbonPageGroup1";
+            toolTipTitleItem6.Appearance.Image = global::DemandManagementSystem.Properties.Resources.customer_32x32;
+            toolTipTitleItem6.Appearance.Options.UseImage = true;
+            toolTipTitleItem6.Image = global::DemandManagementSystem.Properties.Resources.customer_32x32;
+            toolTipTitleItem6.Text = "用户管理";
+            superToolTip6.Items.Add(toolTipTitleItem6);
+            this.ribbonPageGroup1.SuperTip = superToolTip6;
+            // 
+            // ribbonStatusBar
+            // 
+            this.ribbonStatusBar.Location = new System.Drawing.Point(0, 483);
+            this.ribbonStatusBar.Name = "ribbonStatusBar";
+            this.ribbonStatusBar.Ribbon = this.ribbon;
+            this.ribbonStatusBar.Size = new System.Drawing.Size(796, 32);
+            // 
+            // defaultLookAndFeel1
+            // 
+            this.defaultLookAndFeel1.LookAndFeel.SkinName = "Office 2010 Blue";
+            // 
+            // xtraTabControl1
+            // 
+            this.xtraTabControl1.Location = new System.Drawing.Point(0, 154);
+            this.xtraTabControl1.Name = "xtraTabControl1";
+            this.xtraTabControl1.SelectedTabPage = this.xtraTabPage1;
+            this.xtraTabControl1.Size = new System.Drawing.Size(796, 323);
+            this.xtraTabControl1.TabIndex = 3;
+            this.xtraTabControl1.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
+            this.xtraTabPage1,
+            this.xtraTabPage2});
+            // 
+            // xtraTabPage1
+            // 
+            this.xtraTabPage1.Name = "xtraTabPage1";
+            this.xtraTabPage1.Size = new System.Drawing.Size(790, 294);
+            this.xtraTabPage1.Text = "xtraTabPage1";
+            // 
+            // xtraTabPage2
+            // 
+            this.xtraTabPage2.Name = "xtraTabPage2";
+            this.xtraTabPage2.Size = new System.Drawing.Size(294, 271);
+            this.xtraTabPage2.Text = "xtraTabPage2";
             // 
             // mainForm
             // 
@@ -406,12 +406,12 @@
             this.Load += new System.EventHandler(this.mainForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemSpinEdit1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).EndInit();
-            this.xtraTabControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemImageComboBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemImageEdit1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).EndInit();
+            this.xtraTabControl1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

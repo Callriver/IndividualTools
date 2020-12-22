@@ -102,62 +102,58 @@ namespace TxtToSql
                 StringBuilder tmpResult = new StringBuilder();
                 //遍历数组数据
                 foreach (var item in s)
-                {
+                {   
+                    //搜索起始位置，结束位置，参数尾位置
+                    int startIndex = 0;
+                    int endIndex = item.Length;
+
+                    //加拼接头
                     tmpResult.AppendLine();
                     tmpResult.Append("LS_SQL := LS_SQL || '  ' || TRIM('  ");
-                    //如果不是参数
-                    if (item.Contains("AS_"))
-                    {
-                        //取到参数起始位置
-                        int index1 = item.IndexOf("AS_");
-                        //拼接从参数前SQL
-                        tmpResult.Append(item.Substring(0, index1));
-                        tmpResult.Append(" ''' || ");
-
-                        //取到参数结束位置
-                        int index2 = item.IndexOf(" ", index1);
-                        //优化：如果取不到参数尾，则取当期行尾
-                        if (index2 == -1)
+                    //判断是否有参数
+                    if (item.Contains("AS_")||item.Contains("LS_"))
+	                {
+		                //多参数遍历处理
+                        while (item.IndexOf("AS_",startIndex,endIndex-startIndex)!=-1 || item.IndexOf("LS_",startIndex,endIndex-startIndex)!=-1)
                         {
-                            index2 = item.Length;
+
+                            //参数起始位置
+                            int index1 = 0;
+                            //判断参数类型
+                            if (item.IndexOf("AS_",startIndex,endIndex-startIndex)!=-1)
+	                        {
+		                        index1=item.IndexOf("AS_",startIndex,endIndex-startIndex);
+	                        }else if (item.IndexOf("LS_",startIndex,endIndex-startIndex)!=-1)
+	                        {
+		                        index1=item.IndexOf("LS_",startIndex,endIndex-startIndex);
+	                        }
+                        
+                            //拼接参数前SQL
+                            tmpResult.Append(item.Substring(startIndex, index1-startIndex));
+                            tmpResult.Append(" ''' || ");
+
+                            //取到参数结束位置
+                            int index2 = item.IndexOf(" ", index1, endIndex-index1);
+                            //优化：如果取不到参数尾，则取当期行尾
+                            if (index2 == -1)
+                            {
+                                index2 = item.Length;
+                            }
+                            //拼接从参数起始位到结束位的SQL
+                            tmpResult.Append(item.Substring(index1, index2 - index1));
+                            tmpResult.Append(" || ''' ");
+
+                            //修改起始位置,参数尾位置
+                            startIndex = index2;
                         }
-                        //拼接从参数起始位到结束位的SQL
-                        tmpResult.Append(item.Substring(index1, index2 - index1));
-                        tmpResult.Append(" || ''' ");
-
-
-                        //拼接参数后SQL
-                        tmpResult.Append(item.Substring(index2));
+                        //循环完毕后修改结束位置为0
+                        endIndex = 0;
+                        //拼接参数后SQL，最后一次循环后的起始位置即参数结尾位置
+                        tmpResult.Append(item.Substring(startIndex));
                         tmpResult.Append("  ');");
-
-                    }
-                    else if (item.Contains("LS_"))
+                    } else
                     {
-                        //取到参数起始位置
-                        int index1 = item.IndexOf("LS_");
-                        //拼接从参数前SQL
-                        tmpResult.Append(item.Substring(0, index1));
-                        tmpResult.Append(" ''' || ");
-
-                        //取到参数结束位置
-                        int index2 = item.IndexOf(" ", index1);
-                        //优化：如果取不到参数尾，则取当期行尾
-                        if (index2==-1)
-                        {
-                            index2 = item.Length;
-                        }
-                        //拼接从参数起始位到结束位的SQL
-                        tmpResult.Append(item.Substring(index1, index2 - index1));
-                        tmpResult.Append(" || ''' ");
-
-
-                        //拼接参数后SQL
-                        tmpResult.Append(item.Substring(index2));
-                        tmpResult.Append("  ');");
-
-                    }
-                    else
-                    {
+                        //如果没有参数
                         tmpResult.Append(item);
                         tmpResult.Append("  ');");
                     }

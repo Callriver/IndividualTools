@@ -114,7 +114,7 @@ namespace TxtToSql
                     if (item.Contains("AS_")||item.Contains("LS_"))
 	                {
 		                //多参数遍历处理
-                        while (item.IndexOf("AS_",startIndex,endIndex-startIndex)!=-1 || item.IndexOf("LS_",startIndex,endIndex-startIndex)!=-1)
+                        while (item.IndexOf("AS_", startIndex, endIndex - startIndex) != -1 || item.IndexOf("LS_", startIndex, endIndex - startIndex) != -1 || item.IndexOf("AN_", startIndex, endIndex - startIndex) != -1)
                         {
 
                             //参数起始位置
@@ -126,7 +126,11 @@ namespace TxtToSql
 	                        }else if (item.IndexOf("LS_",startIndex,endIndex-startIndex)!=-1)
 	                        {
 		                        index1=item.IndexOf("LS_",startIndex,endIndex-startIndex);
-	                        }
+                            }
+                            else if (item.IndexOf("AN_",startIndex,endIndex-startIndex)!=-1)
+                            {
+                                index1=item.IndexOf("AN_",startIndex,endIndex-startIndex);
+                            }
                         
                             //拼接参数前SQL
                             tmpResult.Append(item.Substring(startIndex, index1-startIndex));
